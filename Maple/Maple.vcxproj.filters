@@ -1,0 +1,388 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="소스 파일">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="헤더 파일">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="리소스 파일">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="소스 파일\Core">
+      <UniqueIdentifier>{9c3ec248-6900-415e-8824-c3679ce67fee}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="소스 파일\Core\SubManager">
+      <UniqueIdentifier>{61f80143-d50b-4247-90ff-233e8fe7892e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="소스 파일\Animation &amp; Texture">
+      <UniqueIdentifier>{6b67299d-c3f6-472d-b423-661733f623a8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="소스 파일\Layer">
+      <UniqueIdentifier>{819ca9d6-7ced-4176-bd75-df9744d1a0c8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="소스 파일\Scene">
+      <UniqueIdentifier>{9a3c48e4-10c1-4642-afef-48b64889ee48}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="소스 파일\Obj">
+      <UniqueIdentifier>{853a3a91-86e0-4e20-9489-bd9c13f3130d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="소스 파일\Obj\MoveObj">
+      <UniqueIdentifier>{ae4df850-20fe-4e44-a267-866f834ed2f8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="소스 파일\Obj\StaticObj">
+      <UniqueIdentifier>{40b305c0-bf6d-4dcf-9a27-2fcdf639f0a7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="소스 파일\Scene\Start">
+      <UniqueIdentifier>{932957bb-95ec-43eb-beab-5b95b07702dc}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="소스 파일\Scene\InGame">
+      <UniqueIdentifier>{5e208e8b-ce78-4c38-af87-e2118f54bb61}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="소스 파일\Obj\UI">
+      <UniqueIdentifier>{92c2c3c7-e05b-4ac2-b5c0-59df3b228ef7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="소스 파일\Obj\UI\UIButton">
+      <UniqueIdentifier>{af8e6f83-9062-4443-a134-ff2a8b224396}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="소스 파일\Ref">
+      <UniqueIdentifier>{e2f4cde4-9620-4722-a5f7-ba9aaeaf58f6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="소스 파일\Collider">
+      <UniqueIdentifier>{9bb5e259-d4b2-4288-868c-30692ba238b5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="소스 파일\Core\SubManager\Input">
+      <UniqueIdentifier>{7534bc7c-3da7-42ad-85d5-632c67d037fd}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="소스 파일\Core\SubManager\Collision">
+      <UniqueIdentifier>{ddb0f2b8-4c82-4aa7-99a4-c85bcd215802}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="소스 파일\Core\SubManager\Create">
+      <UniqueIdentifier>{40aa4c98-cc5b-4db5-b499-e570139ecf33}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="소스 파일\Core\SubManager\Scene">
+      <UniqueIdentifier>{8c587801-9b7c-4c8d-b4d8-ca40554f09a6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="소스 파일\Core\SubManager\Timer">
+      <UniqueIdentifier>{b46d3921-0a32-4ac6-a7a1-abedbad2e25a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="소스 파일\Obj\UI\Mouse">
+      <UniqueIdentifier>{bf62e8f0-c744-43a5-b547-70f4c0651a17}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="소스 파일\Obj\MoveObj\Player">
+      <UniqueIdentifier>{9526c045-ecf3-452f-bdef-1f58348a01a6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="소스 파일\Animation &amp; Texture\Pen">
+      <UniqueIdentifier>{652ab7fe-ff2f-4123-bc19-bc4786abd731}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="소스 파일\Collider\CPixel">
+      <UniqueIdentifier>{efe3c840-268e-4d4e-9cf2-ce48d5015213}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="소스 파일\Collider\CShape">
+      <UniqueIdentifier>{7d1e52ba-c830-4be1-82ec-15043709464c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="소스 파일\Obj\StaticObj\CMapPixel">
+      <UniqueIdentifier>{11889403-deec-47af-9ce6-76b7020a7c72}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="소스 파일\Obj\MoveObj\Monster">
+      <UniqueIdentifier>{d20ba128-4ae2-474b-8ad2-ae4b21b1139d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="소스 파일\Obj\MoveObj\Monster\Normal">
+      <UniqueIdentifier>{bbcdda37-61c5-4251-8a95-db45e2d62010}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="소스 파일\Obj\StaticObj\Effect">
+      <UniqueIdentifier>{3ddd2a0d-7f06-4bac-983a-3352403604db}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="소스 파일\Obj\UI\UIPanel">
+      <UniqueIdentifier>{478b2d66-4c7d-45f2-91bc-ce2c105bc146}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="소스 파일\Obj\UI\AbilityUI">
+      <UniqueIdentifier>{3b6f2b80-3ed8-4bc5-a332-859334b17669}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="소스 파일\Obj\UI\SkillUI">
+      <UniqueIdentifier>{1dc2349a-734e-4a82-8d3b-1f26d428a5ac}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="소스 파일\Obj\UI\InventoryUI">
+      <UniqueIdentifier>{d8b8dab6-dccc-4108-826f-21017cbbe885}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="소스 파일\Obj\UI\QuickSlotUI">
+      <UniqueIdentifier>{38545a93-64e9-4b6d-a461-0612e8289a6d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="소스 파일\Obj\UI\Minimap">
+      <UniqueIdentifier>{b8d9276e-66dc-4ea9-8ff0-082c7c71107c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="소스 파일\Obj\UI\ShopUI">
+      <UniqueIdentifier>{c6208ffb-8f40-4b2d-8381-2d6a79d81e62}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="소스 파일\Obj\StaticObj\Item">
+      <UniqueIdentifier>{f2f963f2-8dd6-423a-88e3-255075c5893b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="소스 파일\Obj\UI\ShopUI\ScrollBar">
+      <UniqueIdentifier>{11b1a9a8-cd44-4e39-abc0-9fa0f865a24b}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Core\CCore.cpp">
+      <Filter>소스 파일\Core</Filter>
+    </ClCompile>
+    <ClCompile Include="Animation\CAnimation.cpp">
+      <Filter>소스 파일\Animation &amp; Texture</Filter>
+    </ClCompile>
+    <ClCompile Include="Layer\CLayer.cpp">
+      <Filter>소스 파일\Layer</Filter>
+    </ClCompile>
+    <ClCompile Include="Object\CStaticObj.cpp">
+      <Filter>소스 파일\Obj\StaticObj</Filter>
+    </ClCompile>
+    <ClCompile Include="Object\CMoveObj.cpp">
+      <Filter>소스 파일\Obj\MoveObj</Filter>
+    </ClCompile>
+    <ClCompile Include="Object\CObj.cpp">
+      <Filter>소스 파일\Obj</Filter>
+    </ClCompile>
+    <ClCompile Include="Scene\CScene.cpp">
+      <Filter>소스 파일\Scene</Filter>
+    </ClCompile>
+    <ClCompile Include="Scene\CStartScene.cpp">
+      <Filter>소스 파일\Scene\Start</Filter>
+    </ClCompile>
+    <ClCompile Include="Scene\CInGameScene.cpp">
+      <Filter>소스 파일\Scene\InGame</Filter>
+    </ClCompile>
+    <ClCompile Include="Texture\CTexture.cpp">
+      <Filter>소스 파일\Animation &amp; Texture</Filter>
+    </ClCompile>
+    <ClCompile Include="UI\CUI.cpp">
+      <Filter>소스 파일\Obj\UI</Filter>
+    </ClCompile>
+    <ClCompile Include="UI\CUIButton.cpp">
+      <Filter>소스 파일\Obj\UI\UIButton</Filter>
+    </ClCompile>
+    <ClCompile Include="CRef.cpp">
+      <Filter>소스 파일\Ref</Filter>
+    </ClCompile>
+    <ClCompile Include="main.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="Math.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="Core\CInput.cpp">
+      <Filter>소스 파일\Core\SubManager\Input</Filter>
+    </ClCompile>
+    <ClCompile Include="Core\CCreateManager.cpp">
+      <Filter>소스 파일\Core\SubManager\Create</Filter>
+    </ClCompile>
+    <ClCompile Include="Core\CSceneManager.cpp">
+      <Filter>소스 파일\Core\SubManager\Scene</Filter>
+    </ClCompile>
+    <ClCompile Include="Core\CTimer.cpp">
+      <Filter>소스 파일\Core\SubManager\Timer</Filter>
+    </ClCompile>
+    <ClCompile Include="Core\CCollisionManager.cpp">
+      <Filter>소스 파일\Core\SubManager\Collision</Filter>
+    </ClCompile>
+    <ClCompile Include="UI\CMouse.cpp">
+      <Filter>소스 파일\Obj\UI\Mouse</Filter>
+    </ClCompile>
+    <ClCompile Include="Object\CPlayer.cpp">
+      <Filter>소스 파일\Obj\MoveObj\Player</Filter>
+    </ClCompile>
+    <ClCompile Include="Core\CPencil.cpp">
+      <Filter>소스 파일\Animation &amp; Texture\Pen</Filter>
+    </ClCompile>
+    <ClCompile Include="Collision\CCollider.cpp">
+      <Filter>소스 파일\Collider</Filter>
+    </ClCompile>
+    <ClCompile Include="Collision\CShape.cpp">
+      <Filter>소스 파일\Collider\CShape</Filter>
+    </ClCompile>
+    <ClCompile Include="Collision\CPixel.cpp">
+      <Filter>소스 파일\Collider\CPixel</Filter>
+    </ClCompile>
+    <ClCompile Include="CStage.cpp">
+      <Filter>소스 파일\Obj\StaticObj\CMapPixel</Filter>
+    </ClCompile>
+    <ClCompile Include="Object\CMonster.cpp">
+      <Filter>소스 파일\Obj\MoveObj\Monster</Filter>
+    </ClCompile>
+    <ClCompile Include="Object\CNormalMonster.cpp">
+      <Filter>소스 파일\Obj\MoveObj\Monster\Normal</Filter>
+    </ClCompile>
+    <ClCompile Include="Object\CEffect.cpp">
+      <Filter>소스 파일\Obj\StaticObj\Effect</Filter>
+    </ClCompile>
+    <ClCompile Include="CUIPanel.cpp">
+      <Filter>소스 파일\Obj\UI\UIPanel</Filter>
+    </ClCompile>
+    <ClCompile Include="UI\CAbilityPanel.cpp">
+      <Filter>소스 파일\Obj\UI\AbilityUI</Filter>
+    </ClCompile>
+    <ClCompile Include="UI\CInventoryPanel.cpp">
+      <Filter>소스 파일\Obj\UI\InventoryUI</Filter>
+    </ClCompile>
+    <ClCompile Include="UI\CQuickSlotPanel.cpp">
+      <Filter>소스 파일\Obj\UI\QuickSlotUI</Filter>
+    </ClCompile>
+    <ClCompile Include="UI\CSkillPanel.cpp">
+      <Filter>소스 파일\Obj\UI\SkillUI</Filter>
+    </ClCompile>
+    <ClCompile Include="UI\CMinimap.cpp">
+      <Filter>소스 파일\Obj\UI\Minimap</Filter>
+    </ClCompile>
+    <ClCompile Include="UI\CShopUI.cpp">
+      <Filter>소스 파일\Obj\UI\ShopUI</Filter>
+    </ClCompile>
+    <ClCompile Include="Object\CItem.cpp">
+      <Filter>소스 파일\Obj\StaticObj\Item</Filter>
+    </ClCompile>
+    <ClCompile Include="UI\CScroll.cpp">
+      <Filter>소스 파일\Obj\UI\ShopUI\ScrollBar</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Core\CCore.h">
+      <Filter>소스 파일\Core</Filter>
+    </ClInclude>
+    <ClInclude Include="Animation\CAnimation.h">
+      <Filter>소스 파일\Animation &amp; Texture</Filter>
+    </ClInclude>
+    <ClInclude Include="Layer\CLayer.h">
+      <Filter>소스 파일\Layer</Filter>
+    </ClInclude>
+    <ClInclude Include="Object\CStaticObj.h">
+      <Filter>소스 파일\Obj\StaticObj</Filter>
+    </ClInclude>
+    <ClInclude Include="Object\CMoveObj.h">
+      <Filter>소스 파일\Obj\MoveObj</Filter>
+    </ClInclude>
+    <ClInclude Include="Object\CObj.h">
+      <Filter>소스 파일\Obj</Filter>
+    </ClInclude>
+    <ClInclude Include="Scene\CScene.h">
+      <Filter>소스 파일\Scene</Filter>
+    </ClInclude>
+    <ClInclude Include="Scene\CStartScene.h">
+      <Filter>소스 파일\Scene\Start</Filter>
+    </ClInclude>
+    <ClInclude Include="Scene\CInGameScene.h">
+      <Filter>소스 파일\Scene\InGame</Filter>
+    </ClInclude>
+    <ClInclude Include="Texture\CTexture.h">
+      <Filter>소스 파일\Animation &amp; Texture</Filter>
+    </ClInclude>
+    <ClInclude Include="UI\CUI.h">
+      <Filter>소스 파일\Obj\UI</Filter>
+    </ClInclude>
+    <ClInclude Include="UI\CUIButton.h">
+      <Filter>소스 파일\Obj\UI\UIButton</Filter>
+    </ClInclude>
+    <ClInclude Include="CRef.h">
+      <Filter>소스 파일\Ref</Filter>
+    </ClInclude>
+    <ClInclude Include="Game.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="Defines.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="Flag.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="Structure.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="resource.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="Math.h">
+      <Filter>소스 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\CInput.h">
+      <Filter>소스 파일\Core\SubManager\Input</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\CCreateManager.h">
+      <Filter>소스 파일\Core\SubManager\Create</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\CSceneManager.h">
+      <Filter>소스 파일\Core\SubManager\Scene</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\CTimer.h">
+      <Filter>소스 파일\Core\SubManager\Timer</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\CCollisionManager.h">
+      <Filter>소스 파일\Core\SubManager\Collision</Filter>
+    </ClInclude>
+    <ClInclude Include="UI\CMouse.h">
+      <Filter>소스 파일\Obj\UI\Mouse</Filter>
+    </ClInclude>
+    <ClInclude Include="Object\CPlayer.h">
+      <Filter>소스 파일\Obj\MoveObj\Player</Filter>
+    </ClInclude>
+    <ClInclude Include="Core\CPencil.h">
+      <Filter>소스 파일\Animation &amp; Texture\Pen</Filter>
+    </ClInclude>
+    <ClInclude Include="Collision\CCollider.h">
+      <Filter>소스 파일\Collider</Filter>
+    </ClInclude>
+    <ClInclude Include="Collision\CShape.h">
+      <Filter>소스 파일\Collider\CShape</Filter>
+    </ClInclude>
+    <ClInclude Include="Collision\CPixel.h">
+      <Filter>소스 파일\Collider\CPixel</Filter>
+    </ClInclude>
+    <ClInclude Include="Object\CStage.h">
+      <Filter>소스 파일\Obj\StaticObj\CMapPixel</Filter>
+    </ClInclude>
+    <ClInclude Include="Object\CMonster.h">
+      <Filter>소스 파일\Obj\MoveObj\Monster</Filter>
+    </ClInclude>
+    <ClInclude Include="Object\CNormalMonster.h">
+      <Filter>소스 파일\Obj\MoveObj\Monster\Normal</Filter>
+    </ClInclude>
+    <ClInclude Include="Object\CEffect.h">
+      <Filter>소스 파일\Obj\StaticObj\Effect</Filter>
+    </ClInclude>
+    <ClInclude Include="UI\CUIPanel.h">
+      <Filter>소스 파일\Obj\UI\UIPanel</Filter>
+    </ClInclude>
+    <ClInclude Include="UI\CAbilityPanel.h">
+      <Filter>소스 파일\Obj\UI\AbilityUI</Filter>
+    </ClInclude>
+    <ClInclude Include="UI\CInventoryPanel.h">
+      <Filter>소스 파일\Obj\UI\InventoryUI</Filter>
+    </ClInclude>
+    <ClInclude Include="UI\CQuickSlotPanel.h">
+      <Filter>소스 파일\Obj\UI\QuickSlotUI</Filter>
+    </ClInclude>
+    <ClInclude Include="UI\CSkillPanel.h">
+      <Filter>소스 파일\Obj\UI\SkillUI</Filter>
+    </ClInclude>
+    <ClInclude Include="UI\CMinimap.h">
+      <Filter>소스 파일\Obj\UI\Minimap</Filter>
+    </ClInclude>
+    <ClInclude Include="UI\CShopUI.h">
+      <Filter>소스 파일\Obj\UI\ShopUI</Filter>
+    </ClInclude>
+    <ClInclude Include="Object\CItem.h">
+      <Filter>소스 파일\Obj\StaticObj\Item</Filter>
+    </ClInclude>
+    <ClInclude Include="UI\CScroll.h">
+      <Filter>소스 파일\Obj\UI\ShopUI\ScrollBar</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="Maple.rc">
+      <Filter>리소스 파일</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="icon1.ico">
+      <Filter>리소스 파일</Filter>
+    </Image>
+  </ItemGroup>
+</Project>

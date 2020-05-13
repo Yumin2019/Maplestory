@@ -1,0 +1,277 @@
+#pragma once
+
+enum MAP_TYPE
+{
+	MT_MAIN,
+	MT_MUSHROOM1,
+	MT_MUSHROOM2,
+	MT_GOLEM,
+	MT_TRAININGROOM
+};
+
+enum PLAYER_MOTION
+{
+	PM_ALERT,
+	PM_DIE,
+	PM_HIT,
+	PM_JUMP,
+	PM_PRONE,
+	PM_PRONE_ATTACK,
+	PM_ROPE,
+	PM_SIT,
+	PM_STAB,
+	PM_STAND,
+	PM_SWING1,
+	PM_SWING2,
+	PM_SWING3,
+	PM_WALK,
+	PM_SLASH
+	// 스킬관련 추가 바람
+};
+
+enum MONSTER_MOTION
+{
+	MM_STAND,
+	MM_HIT,
+	MM_DIE,
+	MM_MOVE,
+	MM_JUMP,
+	MM_SKILL
+};
+
+enum PEN_COLOR
+{
+	PC_BLACK,
+	PC_RED,
+	PC_BLUE,
+	PC_MAGENTA,
+	PC_WHITE,
+	PC_SIZE
+};
+
+enum FONT_TYPE
+{
+	FT_UI, // HPMP BAR에 사용
+	FT_LV, // 레벨쓸 때
+	FT_ITEM,
+	FT_SIZE
+};
+enum CHANGE_SCENE
+{
+	CS_NONE,
+	CS_CHANGE
+};
+
+
+enum SCENE_CLIP
+{
+	SC_NONE,
+	SC_CURRENT,
+	SC_NEXT
+};
+
+enum PANEL_TYPE
+{
+	PT_NONE,
+	PT_HPBAR,
+	PT_MPBAR,
+	PT_HPMPBORDER,
+	PT_EXPBORDER,
+	PT_EXPBAR,
+	PT_MONSTERHPBAR,
+	PT_MONSTERHPBORDER,
+
+	PT_MINIMAP_MAIN,
+	PT_MINIMAP_MUSH1,
+	PT_MINIMAP_MUSH2,
+	PT_MINIMAP_TRAININGROOM,
+	PT_MINIMAP_GOLEM,
+	PT_MINIMAPBORDER,
+
+	PT_MINIMAP_CIRCLE_MAIN,
+	PT_MINIMAP_CIRCLE_MUSH1,
+	PT_MINIMAP_CIRCLE_MUSH2,
+	PT_MINIMAP_CIRCLE_GOLEM,
+	PT_MINIMAP_CIRCLE_TRAININGROOM,
+	PT_NAME,
+
+	PT_QUICKSLOT,
+	PT_QUICKSLOT_ALPHA,
+
+	PT_SKILL,
+	PT_ABILITY,
+	PT_INVENTORY,
+	PT_SHOP,
+	PT_SCROLL
+
+	// 없애지는 말고, 그냥 가지고 있는 값으로.
+
+};
+
+enum BUTTON_STATE
+{
+	BS_NONE,
+	BS_MOUSEON,
+	BS_CLICK
+};
+
+
+enum IMAGE_OPTION
+{
+	IO_ATLAS,
+	IO_FRAME
+};
+
+enum MOVE_DIRECTION
+{
+	MD_NONE,
+	MD_RIGHT = 1,
+	MD_LEFT = -1
+};
+
+enum ANIMATION_OPTION
+{
+	AO_LOOP,
+	AO_ONCE_RETURN, // 1 번
+	AO_ONCE_DESTROY,
+	AO_TIME_RETURN, // TIME
+	AO_TIME_DESTROY
+};
+
+enum OBJECT_TYPE
+{
+	OT_NONE,
+	OT_MONSTER,
+	OT_PLAYER,
+	OT_NPC,
+	OT_UI,
+	OT_ITEM,
+	OT_EFFECT,
+	OT_MAP,
+	OT_MOUSE
+};
+
+enum ATTACK_TYPE
+{
+	AT_NONE,
+	AT_NORMAL_ATTACK_LEFT,
+	AT_NORMAL_ATTACK_RIGHT,
+	AT_SKILL_ATTACK_LEFT,
+	AT_SKILL_ATTACK_RIGHT
+};
+enum EFFECT_TYPE
+{
+	// 움직이는 친구들이 아니면 간단하게, 움직이는 친구라면 좌우 따져서.
+	ET_NONE,
+	ET_SWING1,
+	ET_SWING2,
+	ET_SWING3,
+	ET_PRONE_ATTACK_LEFT,
+	ET_PRONE_ATTACK_RIGHT,
+	ET_STAB,
+	ET_SKILL, // 중간이 쎄다
+	ET_SKILL_LEAF // 강 중 하 
+};
+
+enum MONSTER_NAME
+{
+	RED_SNAIL,
+	BLUE_SNAIL,
+	GOLEM,
+	GREEN_MUSHROOM,
+	BLUE_MUSHROOM,
+	ORANGE_MUSHROOM,
+	MUSHMOM,
+	TREE
+
+};
+
+enum SHAPE_TYPE
+{
+	// 용도를 나눠서 처리하여 속도를 향상.
+
+	ST_NONE,
+	ST_CIRCLE,
+	ST_MOUSE,
+
+	ST_RECT_OBSTACLE, // OBSTACLE 플레이어 노랑.
+	ST_RECT_TERRAIN, // MAGENTA 바닥
+
+	ST_RECT_ROPE, // ROPE라고는 했는데 다양하게 사용
+
+	ST_RECT_PORTAL, // 포탈
+
+	ST_RECT_TURN, // 몬스터 TURN 용도에 사용.
+
+	ST_RECT_MONSTER_ATTACK, // 몬스터 때리는 용도
+
+	ST_RECT_NPC,
+
+	ST_RECT_MONSTER, // 몬스터 맞는 용 vs 플레이어 때리는 용 충돌에 사용
+	ST_RECT_SKILL_LEFT,
+	ST_RECT_SKILL_RIGHT,
+	ST_RECT_NORMAL_LEFT,
+	ST_RECT_NORMAL_RIGHT,
+
+	ST_PIXEL,
+
+	ST_SKILL_UI_BUTTON,
+	ST_INVENTORY_UI_BUTTON,
+	ST_ABILITY_UI_BUTTON,
+	ST_QUICKSLOT_UI,
+	ST_SHOP_UI_BUTTON, 
+	ST_MINIMAP,
+	ST_ITEM_BLOCK,
+
+	ST_SHOP_SCROLL,
+
+
+	/*
+	일단, 문제점이... flag에 따라서 마우스에서 m_pPanel을 잡아서 처리를 하는데, 여기에서
+	중요한 것이 ZOrder 바꾸는 처리이다. 일부 flag는 클릭이 되더라도, 올라오면 안 되고,
+	일부는 반드시 올라와야 한다.
+
+	예를 들어서, 인벤토리의 아이템 슬롯은 클릭한다고 해서 올라오면 안 되지만, 
+	size는 올라와야 한다.
+
+	x 또한 올라오면 안 된다. (이게 올라오니까 지금.. 올라와서, 처리, 날라가는...) 이거 안 좋다...
+	겹치는데, 일단 올라가서, panel을 잡으니까 처리가 되는 것이다.....
+
+	현재의 버튼들을 분할할 필요성이 있다.
+
+	size, XButton, = 기본
+
+	상점 / 인벤토리 -> ui button으로 나오던데.. 칸들이... 뭐지.. 
+
+	ㅜㅜ
+
+	나중에 더 해보자.
+	
+	
+	*/
+	
+};
+
+enum ITEM_TAG
+{
+	IT_NONE = -1,
+	IT_RED_POTION,
+	IT_ORANGE_POTION,
+	IT_WHITE_POTION,
+	IT_BLUE_POTION,
+	IT_SPEED_POTION,
+	IT_WORRIOR_POTION,
+	IT_APPLE,
+	IT_EGG,
+	IT_ORANGE,
+	IT_SIZE,
+	IT_MESO
+};
+
+enum COLLISION_STATE
+{
+	CS_START,
+	CS_STAY,
+	CS_END,
+	CS_SIZE
+};
